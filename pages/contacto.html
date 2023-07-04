@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div ><img id="logoW" src="../assets/images/Logos/Wiki.png" alt="Not found"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Pagina principal</a></li>
+                <li>Lorem b</li>
+                <li>Lorem c</li>               
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="aportes"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dicta, dolores tenetur cupiditate quos quo?</p></div>
+        <form action="" method="post">
+            <div class="forms">
+                <fieldset>
+                    <label for="juego">A que juego pertenece su aporte?</label>
+                    <select name="" id="juego" required >
+                        <option value="DRG">Deep Rock Galactic</option>
+                        <option value="TBOI">The Binding Of Isaac</option>
+                        <option value="RoR2">Risk Of Rain 2</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="forms">
+                <fieldset>
+                    <label for="aporte">A que categoria pertenece su aporte?</label>   
+                    <select name="" id="aporte" required>
+                        <option value="Personaje">Personaje</option>
+                        <option value="Enemigos">Enemigos</option>
+                        <option value="Objetos">Objeto</option>
+                        <option value="Curiosidad">Curiosidad</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="forms">
+                <fieldset>
+                    <label for="archivos">Subir archivo</label> 
+                    <input type="file" id="archivos">
+                </fieldset>
+            </div>
+            <div class="forms">
+                <fieldset>
+                    <label for="descripcion">Describa brevemente su aporte</label>
+                    <textarea name="" id="descripcion" cols="30" rows="10"></textarea>
+                </fieldset>
+            </div>
+            <div id="enviar">
+                <fieldset>
+                    <input id="enviar" type="submit" value="Enviar">
+                </fieldset>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

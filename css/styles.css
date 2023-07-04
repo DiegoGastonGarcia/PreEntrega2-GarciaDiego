@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url("../assets/images/Fondos/index\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(5, 15, 51);
+    font-size: 0;
+}
+
+/* ENCABEZADO */
+
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    background-color: rgb(46, 69, 153, 90%);
+    position: sticky;
+    top: 0;
+}
+
+header div {
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav {
+    font-size: 1rem;
+    height: 100%;
+    
+}
+
+header nav {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-items: center;
+    vertical-align: top;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 23px;
+    margin-right: 15px;
+}
+
+header nav ul li {
+    width: 127px;
+    height: 20px;
+    display: inline-block;
+    background-color:rgb(128, 155, 255, 50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    list-style-type: none;
+    margin: 2px;
+    border-radius: 5px;
+    
+}
+
+#logoW {
+    width: 70px;
+    margin-left: 5px;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(5, 15, 51, 50%);
+    font-size: 1rem;
+}
+
+
+section h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 7rem;
+    color: rgb(128, 155, 255);
+    text-align: center;
+    
+}
+
+section h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+    color: rgb(128, 155, 255);
+    text-align: center;
+}
+
+section p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(128, 155, 255);
+    text-align: center;
+}
+
+#aportes {
+    font-family: 'Jost', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(128, 155, 255);
+    text-align: center; 
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.forms {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    color: rgb(128, 155, 255);
+    margin: 0.8rem;
+    padding: 1rem;
+}
+
+#enviar {
+    text-align: center;
+}
+
+.contenedor {
+    width: 100%;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "pages review"
+    "pages review"
+    "pages review"
+    "pages review"
+    "pages review"
+    "pages review"
+    "pages   prox"
+    ;
+}
+
+
+#proximamente {
+    grid-area: prox;
+
+}
+
+.boton {
+    font-family: 'Jost', sans-serif;
+    margin: 1rem;
+    width: 584px;
+    height: 205px;
+    background-color: rgb(5, 15, 51, 50%);
+    color: rgb(128, 155, 255);
+    text-align: center;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.imagen {
+    width: 584px;
+    height: 205px;  
+}
+
+
+.textoLateral {
+    background-color: rgb(5, 15, 51, 50%);
+    margin: 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(128, 155, 255);
+    background-color: rgb(5, 15, 51, 50%);
+    text-align: center;
+    display: flex;
+    width: 35.375rem;
+    height: 42.1875rem;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.texto {
+    background-color: rgb(5, 15, 51, 50%);
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+    width: 34.875rem;
+    height: 20rem;
+    color: rgb(128, 155, 255);
+    text-align: center;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.reviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    grid-area: review;
+}
+
+.pagesContainer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    grid-area: pages;
+    justify-content: space-evenly;
+    justify-items: center;
+
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    height: 10%;
+    background-color: rgb(20, 38, 102, 90%) ;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+footer ul li {
+    width: 127px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.network {
+    width: 54px;
+    height: 49px;
+}
+
+.textoboton {
+    width: 127px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(128, 155, 255, 50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 2px;
+    border-radius: 5px;
+}
