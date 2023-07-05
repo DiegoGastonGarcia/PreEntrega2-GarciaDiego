@@ -140,7 +140,7 @@ section p {
     "pages review"
     "pages review"
     "pages review"
-    "pages   prox"
+    "pages  prox"
     ;
 }
 
@@ -162,6 +162,7 @@ section p {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -169,7 +170,7 @@ section p {
 
 .imagen {
     width: 584px;
-    height: 205px;  
+    height: 100%;  
 }
 
 
@@ -180,12 +181,14 @@ section p {
     font-size: 1.5rem;
     color: rgb(128, 155, 255);
     background-color: rgb(5, 15, 51, 50%);
-    text-align: center;
-    display: flex;
     width: 35.375rem;
     height: 42.1875rem;
+    text-align: center;
+    display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .texto {
@@ -197,11 +200,11 @@ section p {
     height: 20rem;
     color: rgb(128, 155, 255);
     text-align: center;
-    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .reviewContainer {
@@ -216,10 +219,10 @@ section p {
 .pagesContainer {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
     grid-area: pages;
     justify-content: space-evenly;
     justify-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -231,7 +234,6 @@ footer {
     text-align: center;
     font-size: 1rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -239,7 +241,7 @@ footer {
 
 footer ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -261,6 +263,10 @@ a {
     color: rgb(255, 255, 255);
 }
 
+a:hover {
+    color: rgb(5, 15, 51, 50%);
+}
+
 .network {
     width: 54px;
     height: 49px;
@@ -276,4 +282,101 @@ a {
     text-align: center;
     margin: 2px;
     border-radius: 5px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    #logoW {
+        width: 100%;
+        height: 100%;
+    }
+    .textoLateral {
+        width: 95%;
+    }
+    .texto {
+        width: 95%;
+    }
+    .boton {
+        width: 95%;
+    }
+    .imagen {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .textoLateral {
+        font-size: 1.3rem;
+    }
+
+    .texto {
+        font-size: 1.3rem;
+    }
+
+    #proximamente {
+        width: 100%;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .textoLateral {
+        font-size: 1.1rem;
+    }
+
+    .texto {
+        font-size: 1.2rem;
+    }
+
+    #proximamente {
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    header nav ul  {
+        width: 65%;
+        height: 30%;
+    } 
+    
+
+    header nav ul li {
+        width: 100%; 
+        height: 30%;
+    } 
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    section h1 {
+        font-size: 4.5rem;
+    }
+    section h2 {
+        font-size: 1.7rem;
+    }
+    .textoLateral{
+        display: none;
+    }
+
+    #proximamente {
+        width: 93%;
+    }
+    
+    footer nav ul {
+        margin: none;
+    }
+    .textoboton {
+        width: 35%;
+    }
+    .network {
+        width: 80%;
+    }
+    
 }
