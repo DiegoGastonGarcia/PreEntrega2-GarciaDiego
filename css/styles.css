@@ -290,7 +290,6 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
     #logoW {
-        width: 100%;
         height: 100%;
     }
     .textoLateral {
@@ -301,6 +300,7 @@ a:hover {
     }
     .boton {
         width: 95%;
+        font-size: 4rm;
     }
     .imagen {
         width: 100%;
@@ -321,6 +321,10 @@ a:hover {
         width: 100%;
         font-size: 3rem;
     }
+
+    .boton {
+        font-size: 3.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -335,6 +339,10 @@ a:hover {
     #proximamente {
         font-size: 2rem;
     }
+
+    .boton {
+        font-size: 3rem;
+    }
     
 }
 
@@ -347,10 +355,12 @@ a:hover {
     
 
     header nav ul li {
-        width: 100%; 
         height: 30%;
     } 
 
+    #logoW {
+        margin-left: 1rem;
+    }
     .contenedor{
         display: flex;
         flex-direction: column;
@@ -358,13 +368,17 @@ a:hover {
 
     }
     section h1 {
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
     section h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .textoLateral{
         display: none;
+    }
+
+    .boton {
+        font-size: 2rem;
     }
 
     #proximamente {
@@ -376,6 +390,7 @@ a:hover {
     }
     .textoboton {
         width: 35%;
+        font-size: 0.6rem;
     }
     .network {
         width: 80%;
