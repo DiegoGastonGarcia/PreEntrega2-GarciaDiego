@@ -250,7 +250,7 @@ footer ul {
 }
 
 footer ul li {
-    width: 127px;
+    width: 200px;
     height: 20px;
     display: flex;
     justify-content: center;
@@ -263,10 +263,12 @@ footer ul li {
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 a:hover {
     color: rgb(5, 15, 51, 50%);
+    font-size: 1.5rem;
 }
 
 .network {
@@ -284,6 +286,12 @@ a:hover {
     text-align: center;
     margin: 2px;
     border-radius: 5px;
+}
+
+.textoboton:hover {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(128, 155, 255);
 }
 
 /* RESPONSIVE */
