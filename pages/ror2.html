@@ -12,14 +12,32 @@
     <title>RoR2</title> 
 </head>
 <body>
-    <header>
-        <div ><img id="logoW" src="../assets/images/Logos/Wiki.png" alt="Not found"></div>
-        <nav>
-            <ul>
-                <li class="textoboton"><a href="../index.html">Pagina Principal</a></li>
-            </ul>
-        </nav>
+    <!-- ENCABEZADO -->
+    <header  class="container-fluid">
+        <div class="container-fluid ">
+            <div class=" d-flex "><a href="../index.html"><img id="logoW" src="../assets/images/Logos/Wiki.png" alt="Not found"></a></div>
+            <nav class="navbar">
+                <ul class="container-fluid d-flex justify-content-end">
+                    <li class="nav-item h-100 ">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item h-100 ">
+                        <a class="nav-link active" aria-current="page" href="#contactoror2">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown h-100">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Paginas</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../pages/drg.html">Deep Rock Galactic</a></li>
+                          <li><a class="dropdown-item" href="../pages/tboi.html">The Binding Of Isaac</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../pages/contacto.html">Aporta</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <!-- CUERPO PRINCIPAL -->
     <main>
         <section>
             <h1>Risk Of Rain 2</h1>
@@ -33,8 +51,9 @@
             <li class="boton">Objetos</li>
         </ul>
     </main>
+    <!-- PIE DE PAGINA -->
     <footer>
-        <ul>
+        <ul id="contactoror2">
             <li><a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/" target="_blank"><img class="network" src="../assets/Utilidades/steam.svg" alt=""></a></li>
             <li><a href="https:www.twitter.com/RiskofRain" target="_blank"><img class="network" src="../assets/Utilidades/twitter.svg" alt=""></a></li>
             <li><a href="https://www.reddit.com/r/riskofrain/" target="_blank"><img class="network" src="../assets/Utilidades/reddit.svg" alt=""></a></li>

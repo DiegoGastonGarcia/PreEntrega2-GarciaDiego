@@ -150,6 +150,14 @@ section p {
 
 }
 
+#proximamente a {
+    color: rgb(128, 155, 255);
+}
+
+#proximamente a:hover {
+    font-size: 5.5rem;
+}
+
 .boton {
     font-family: 'Jost', sans-serif;
     margin: 1rem;
