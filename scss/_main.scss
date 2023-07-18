@@ -1,0 +1,26 @@
+main {
+    width: $anchoTotal;
+    height: 80%;
+    background-color: $secondary;
+    font-size: $standar;
+    section {
+        h1 {
+            font-family: $fuentePrincipal;
+            font-size: $fsH1;
+            color: $primary;
+            text-align: center;
+        }
+        h2 {
+            font-family: $fuentePrincipal;
+            font-size: $fsH2;
+            color: $primary;
+            text-align: center;
+        }
+        p {
+            font-family: $fuentePrincipal;
+            font-size: $fsTexto;
+            color: $primary;
+            text-align: center;
+        }
+    }
+}

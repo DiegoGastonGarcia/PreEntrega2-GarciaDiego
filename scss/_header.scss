@@ -1,0 +1,47 @@
+header {
+    width: $anchoTotal;
+    height: $alturaBarras;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    background-color: rgb(46, 69, 153, 90%);
+    position: sticky;
+    top: 0;
+    div {
+        width: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        #logoW {
+            width: 70px;
+            margin-left: 5px;
+        }
+        nav {
+            font-size: $fsC;
+            height: 100%;
+            width: 85%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            justify-items: center;
+            vertical-align: top;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 23px;
+                margin-right: 15px;
+                li {
+                    width: 127px;
+                    height: 20px;
+                    display: inline-block;
+                    background-color:$background;
+                    color: $fuenteBoton;
+                    text-align: center;
+                    list-style-type: none;
+                    margin: 2px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

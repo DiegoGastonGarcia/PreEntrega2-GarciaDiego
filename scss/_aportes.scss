@@ -1,0 +1,17 @@
+#aportes {
+    font-family: $fuentePrincipal;
+    font-size: $fsH2;
+    color: $primary;
+    margin: $standar;
+    padding: $standar;
+    .forms {
+        font-family: $fuentePrincipal;
+        font-size: $standar;
+        color: $primary;
+        margin: $standar;
+        padding: $standar;
+    }
+    #enviar {
+        text-align: center;
+    }
+}

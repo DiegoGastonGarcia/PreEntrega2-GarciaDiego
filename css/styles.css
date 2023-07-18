@@ -127,7 +127,7 @@ section p {
     text-align: center;
 }
 
-.contenedor {
+.contenedorGrid {
     width: 100%;
     font-size: 1rem;
     display: grid;

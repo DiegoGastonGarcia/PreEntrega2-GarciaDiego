@@ -1,0 +1,13 @@
+*{
+    margin: $fsC;
+    padding: $fsC;
+}
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url("../assets/images/Fondos/index\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $secondary;
+    font-size: $fsC;
+}
