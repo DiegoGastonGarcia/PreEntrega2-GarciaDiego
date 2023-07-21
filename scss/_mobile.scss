@@ -1,0 +1,83 @@
+@media screen and (max-width: 425px) {
+
+    header {
+        div {
+            nav {
+                ul {
+                width: 70%;
+                height: 30%;
+                    li {
+                        width: 30%;
+                        height: 30%;
+                    }
+                }      
+            }
+        }
+
+    }
+    
+
+
+    #logoW {
+        margin-left: $standar;
+    }
+
+
+    main {
+        
+        section h1 {
+            font-size: ($fsTexto)*2;
+        }
+        section h2 {
+            font-size: $fsTexto;
+            
+        }
+        .contenedorGrid{
+            @include flexcolum;
+            width: $anchoTotal;
+            .reviewContainer {
+                display: none;
+            }
+            .pagesContainer {
+                .boton {
+                    width: $anchoTotal;
+                    font-size: $standar;
+                    a {
+                        .imagen {
+                            width: $anchoTotal;
+                        }
+                    }
+                    
+                }
+                .texto {
+                    font-size: $standar;
+                    width: $anchoTotal;
+                }
+            }
+    
+        }
+
+        #proximamente {
+            width: 93%;
+        }
+    }
+
+    
+    footer {
+        nav {
+            ul {
+                margin: none;
+            }
+        }
+    }
+
+
+    .textoboton {
+        width: 35%;
+        font-size: 0.6rem;
+    }
+    .network {
+        width: 80%;
+    }
+    
+}

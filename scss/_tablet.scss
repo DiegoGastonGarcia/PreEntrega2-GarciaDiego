@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+    main {
+        .textoLateral {
+            font-size: $standar;
+        }
+
+        .texto {
+            font-size: $standar;
+        }
+
+        #proximamente {
+            font-size: ($standar)*2;
+    }
+
+        .boton {
+            font-size: ($fsTexto)*2;
+        }
+    } 
+}

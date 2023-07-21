@@ -1,0 +1,36 @@
+.boton {
+    font-family: $fuentePrincipal;
+    font-size: $fsH2;
+    margin: $standar;
+    width: $anchoTotal;
+    height: 205px;
+    background-color: $secondary;
+    color: $primary;
+    text-align: center;
+    @include flexcenter;
+    @include flexcolum;
+        a {
+            width: $anchoTotal;
+            transition: all 0.3s ease-in;
+            &:hover {
+                transform: scale(1.3);
+            }
+            .imagen {
+
+                width: 70%;
+                height: 205px;
+            }
+        }
+
+        #proximamente {
+            grid-area: prox;
+            a {
+                width: $anchoTotal;
+                color: $primary;
+                font-size: $fsBotonP !important;
+                &hover {
+                font-size: ($fsBotonP)+0.5;
+                }
+            }
+        }
+    }

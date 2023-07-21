@@ -4,26 +4,18 @@ footer {
     background-color: $special;
     font-size: $standar;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+    @include flexcenter;
+    @include nav;
     ul {
-        display: flex;
+        @include flexcenter;
         flex-wrap: nowrap;
         width: $anchoTotal;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
         li {
             width: 200px;
             height: 20px;
-            display: flex;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
+            @include flexcenter;
             margin: $standar;
-            list-style-type: none;
+            @include reset-lista;
             .network {
                 width: ($standar)*3.4;
                 height: ($standar)*3;
@@ -31,19 +23,20 @@ footer {
             .textoboton {
                 width: 127px;
                 height: 20px;
-                display: flex;
-                justify-content: center;
+                list-style-type: none;
                 background-color:$background;
                 color: $fuenteBoton;
                 text-align: center;
                 margin: 2px;
                 border-radius: 5px;
+                @include reset-lista;
                 &hover {
                     width: ($standar)*12.5;
                     height: ($standar)*2;
                     background-color: $primary;
                 }
                 a {
+                list-style-type: none;
                 text-decoration: none;
                 color: $fuenteBoton;
                 width: $anchoTotal;

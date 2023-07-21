@@ -15,79 +15,19 @@
     ;
 
     .pagesContainer {
-        display: flex;
-        flex-direction: column;
+        @include flexcolum;
         grid-area: pages;
-        justify-content: space-evenly;
-        justify-items: center;
-        flex-wrap: wrap;
-        #proximamente {
-            grid-area: prox;
-            a {
-                color: $primary;
-                &hover {
-                font-size: ($fsBotonP)+0.5;
-                }
-            }
-        }
-        .boton {
-        font-family: $fuentePrincipal;
-        font-size: $fsBotonP;
-        margin: $standar;
-        width: 584px;
-        height: 205px;
-        background-color: $secondary;
-        color: $primary;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-items: center;
+        justify-content: space-evenly !important;
         align-items: center;
-            .imagen {
-            width: 584px;
-            height: 205px;
-            }
-        }
-        .texto {
-                color: $primary;
-                background-color: $secondary;
-                font-family: $fuentePrincipal;
-                font-size: $fsTexto;
-                margin: $standar;
-                width: ($standar)*35;
-                height: ($standar)*20;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                flex-shrink: 0;
-                justify-content: center;
-                flex-wrap: wrap;
-        }
+        flex-shrink: 1 !important;
+
     }
     .reviewContainer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        justify-items: center;
+        @include flexcolum;
+        justify-content: space-evenly !important;
+        align-items: center;        
+        flex-shrink: 1 !important;
         grid-area: review;
-        .textoLateral {
-            margin: $standar;
-            font-family: $fuentePrincipal;
-            font-size: $fsTexto;
-            color: $primary;
-            background-color: $secondary;
-            width: ($standar)*34;
-            height: ($standar)*42;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+        
     }
 }
