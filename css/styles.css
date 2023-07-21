@@ -48,7 +48,7 @@ header {
         height: 20px;
         display: inline-block;
         color: white;
-        padding-left: 10px;
+        padding-left: 5px;
         margin: 2px;
         border-radius: 5px; }
         header nav ul li .textoboton a {
@@ -84,19 +84,19 @@ main {
     color: #809bff;
     text-align: center; }
 
-#aportes {
+main #aportes {
   font-family: "Jost", sans-serif;
   font-size: 2.5rem;
   color: #809bff;
   margin: 1rem;
   padding: 1rem; }
-  #aportes .forms {
+  main #aportes .forms {
     font-family: "Jost", sans-serif;
     font-size: 1rem;
     color: #809bff;
     margin: 1rem;
     padding: 1rem; }
-  #aportes #enviar {
+  main #aportes #enviar {
     text-align: center; }
 
 .contenedorGrid {
@@ -223,7 +223,7 @@ footer {
         height: 20px;
         display: inline-block;
         color: white;
-        padding-left: 10px;
+        padding-left: 5px;
         margin: 2px;
         border-radius: 5px; }
         footer nav ul li .textoboton a {
