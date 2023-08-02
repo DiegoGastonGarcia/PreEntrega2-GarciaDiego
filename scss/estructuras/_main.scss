@@ -8,11 +8,13 @@ main {
             font-family: $fuentePrincipal;
             font-size: $fsH1;
             color: $primary;
+            margin-top: ($standar)*2;
             text-align: center;
         }
         h2 {
             font-family: $fuentePrincipal;
             font-size: $fsH2;
+            margin: 0 0 3rem 0;
             color: $primary;
             text-align: center;
         }
@@ -21,6 +23,7 @@ main {
             font-size: $fsTexto;
             color: $primary;
             text-align: center;
+            margin: $standar;
         }
     }
 }

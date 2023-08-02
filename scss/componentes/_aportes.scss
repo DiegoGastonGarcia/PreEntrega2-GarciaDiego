@@ -3,17 +3,15 @@ main {
     font-family: $fuentePrincipal;
     font-size: $fsH2;
     color: $primary;
-    margin: $standar;
-    padding: $standar;
+    @include size;
     .forms {
         font-family: $fuentePrincipal;
         font-size: $standar;
         color: $primary;
-        margin: $standar;
-        padding: $standar;
-    }
+        @include size;
+        }
     #enviar {
         text-align: center;
+        }
     }
-}
 }

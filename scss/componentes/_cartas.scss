@@ -1,0 +1,49 @@
+.cardsContainer {
+    @include flexcenter;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 100%;
+    gap: 2rem;
+    a {       
+        .carta {
+            @include size;
+            @include flexcolum;
+            margin: 0;
+            flex-wrap: nowrap;
+            width: 160px;
+            height: 210px;
+            background-color: rgba($color: $primary, $alpha: 0.75);
+            border-radius: 20px;
+            box-shadow: 0.5rem 1rem 1rem $secondary;
+            transition: all 0.2s ease-in;
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0px 0px 25px 5px rgba($color: $primary, $alpha: 0.75);
+                }
+            .imgCarta {
+                margin: 1px 0 5px 3px;
+                overflow: hidden;
+                img {
+                    border: solid 2px $primary; 
+                    height: 130px; 
+                    width: 150px;
+                    background-color: rgba($color: $secondary, $alpha: 0.85);
+                }
+            }   
+            .textoCarta {
+                    h3 {
+                    font-family: $fuentePrincipal;
+                    font-size: $fsTexto;
+                    color: $secondary;
+                }
+                p {
+                    font-family: $fuentePrincipal;
+                    color: $secondary;
+                    font-size: $standar;
+                    font-weight: 500;
+                }
+            }
+        } 
+    }
+
+}

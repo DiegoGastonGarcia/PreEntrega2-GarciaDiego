@@ -24,6 +24,11 @@
     justify-content: center;
 }
 
+@mixin size {
+    padding: $standar;
+    margin: $standar;
+}
+
 @mixin nav {
     nav {
         @include reset-lista;

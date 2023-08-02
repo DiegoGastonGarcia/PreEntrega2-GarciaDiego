@@ -11,7 +11,7 @@
     "pages review"
     "pages review"
     "pages review"
-    "pages  prox"
+    "prox  prox"
     ;
 
     .pagesContainer {
@@ -23,11 +23,15 @@
 
     }
     .reviewContainer {
-        @include flexcolum;
-        justify-content: space-evenly !important;
-        align-items: center;        
-        flex-shrink: 1 !important;
+        @extend .pagesContainer;
         grid-area: review;
         
+    }
+
+    #proximamente {
+        grid-area: prox;
+        @include flexcenter;
+        width: 50%;
+        margin: auto;
     }
 }

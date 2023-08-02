@@ -34,6 +34,9 @@
             .textoLateral {
                 width: 95%;
                 font-size: ($standar)*1.3;
+                .cardsContainer {
+                    flex-wrap: wrap;
+                }
             }   
         }
     }
