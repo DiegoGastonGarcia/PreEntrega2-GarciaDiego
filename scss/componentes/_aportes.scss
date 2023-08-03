@@ -1,17 +1,47 @@
-main {
-    #aportes {
+#aportes {
+    @include reset;
     font-family: $fuentePrincipal;
     font-size: $fsH2;
     color: $primary;
-    @include size;
     .forms {
+        font-size: 1.5rem;
         font-family: $fuentePrincipal;
-        font-size: $standar;
         color: $primary;
-        @include size;
+        fieldset {
+            @include size;            
         }
-    #enviar {
-        text-align: center;
-        }
+
     }
+
+    #juego {
+        background-color: rgba($color: $primary, $alpha: 0.50);
+        color: $special;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 3px 3px $special;
+    }
+
+    #aporte {
+        @extend #juego;
+    }
+
+    #archivos {
+        @extend #juego;
+    }
+
+    #descripcion {
+        @extend #juego;
+        width: 65%;
+    }
+
+    #enviar {
+        @include flexcenter;
+        font-size: $standar;
+        padding: 0.5rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        text-align: center;
+        @extend #juego;
+    }
+
 }
+

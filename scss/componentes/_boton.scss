@@ -10,8 +10,14 @@
     border-radius: $standar;
     @include flexcenter;
     @include flexcolum;
+    transition: all 0.3s ease-out;
+    &:hover {
+        box-shadow: 0px 0px 5px 5px $primary;
+    }
         a {
             width: $anchoTotal;
+            height: 100%;
+            @include flexcenter;
             transition: all 0.3s ease-in;
             &:hover {
                 transform: scale(1.2);
@@ -37,4 +43,7 @@
     .botonImagen {
         @extend .boton;
         background-color: transparent;
+        &:hover {
+            box-shadow: none;
+        }
     }
