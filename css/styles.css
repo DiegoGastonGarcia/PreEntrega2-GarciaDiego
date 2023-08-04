@@ -213,7 +213,7 @@ main {
 
 .textoLateral {
   font-size: 1.2rem;
-  width: 34rem;
+  width: 80%;
   height: 42rem;
   justify-content: space-around; }
 
@@ -235,7 +235,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   height: 80%;
-  width: 100%;
+  width: 95%;
   gap: 2rem; }
   .cardsContainer a .carta {
     padding: 1rem;
@@ -358,16 +358,16 @@ footer {
             color: #050f33;
             font-size: 1.5rem; }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   #logoW {
     height: 100%; }
   main .pagesContainer, main .contenedorGrid .reviewContainer, .contenedorGrid main .reviewContainer {
     width: 100%; }
     main .pagesContainer .texto, main .contenedorGrid .reviewContainer .texto, .contenedorGrid main .reviewContainer .texto, main .pagesContainer .textoLateral, main .contenedorGrid .reviewContainer .textoLateral, .contenedorGrid main .reviewContainer .textoLateral {
-      width: 95%;
-      font-size: 1.3rem; }
+      width: 90%;
+      font-size: 1rem; }
     main .pagesContainer .boton, main .contenedorGrid .reviewContainer .boton, .contenedorGrid main .reviewContainer .boton, main .pagesContainer .botonImagen, main .contenedorGrid .reviewContainer .botonImagen, .contenedorGrid main .reviewContainer .botonImagen {
-      width: 95%;
+      width: 90%;
       font-size: 3.5rem; }
       main .pagesContainer .boton a, main .contenedorGrid .reviewContainer .boton a, .contenedorGrid main .reviewContainer .boton a, main .pagesContainer .botonImagen a, main .contenedorGrid .reviewContainer .botonImagen a, .contenedorGrid main .reviewContainer .botonImagen a {
         width: 100%; }
@@ -379,10 +379,17 @@ footer {
   main .reviewContainer {
     width: 100%; }
     main .reviewContainer .textoLateral {
-      width: 95%;
-      font-size: 1.3rem; }
+      width: 90%;
+      font-size: 1rem; }
       main .reviewContainer .textoLateral .cardsContainer {
-        flex-wrap: wrap; } }
+        height: 70%;
+        flex-wrap: wrap; }
+        main .reviewContainer .textoLateral .cardsContainer a .carta {
+          height: 180px;
+          width: 130px; }
+          main .reviewContainer .textoLateral .cardsContainer a .carta .imgCarta img {
+            height: 100px;
+            width: 120px; } }
 
 @media screen and (max-width: 767px) {
   main .textoLateral {
@@ -413,21 +420,27 @@ footer {
     flex-shrink: 0;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%; }
+    width: 90%; }
     main .contenedorGrid .reviewContainer {
       display: none; }
     main .contenedorGrid .pagesContainer .boton, main .contenedorGrid .reviewContainer .boton, main .contenedorGrid .pagesContainer .botonImagen, main .contenedorGrid .reviewContainer .botonImagen {
-      width: 100%;
-      font-size: 1rem; }
+      width: 80%;
+      font-size: 1rem;
+      margin: auto; }
       main .contenedorGrid .pagesContainer .boton a .imagen, main .contenedorGrid .reviewContainer .boton a .imagen, main .contenedorGrid .pagesContainer .botonImagen a .imagen, main .contenedorGrid .reviewContainer .botonImagen a .imagen {
         width: 100%; }
     main .contenedorGrid .pagesContainer .texto, main .contenedorGrid .reviewContainer .texto, main .contenedorGrid .pagesContainer .textoLateral, main .contenedorGrid .reviewContainer .textoLateral {
       font-size: 1rem;
-      width: 100%; }
+      width: 90%;
+      margin: 1.5rem; }
   main #proximamente {
-    width: 93%; }
-  footer nav ul {
-    margin: none; }
+    width: 95%;
+    margin: 1.5rem;
+    font-size: 1.5rem; }
+  footer {
+    margin-top: 1rem; }
+    footer nav ul {
+      margin: none; }
   .textoboton {
     width: 35%;
     font-size: 0.6rem; }

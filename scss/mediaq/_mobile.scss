@@ -34,14 +34,15 @@
         }
         .contenedorGrid{
             @include flexcolum;
-            width: $anchoTotal;
+            width: 90%;
             .reviewContainer {
                 display: none;
             }
             .pagesContainer {
                 .boton {
-                    width: $anchoTotal;
+                    width: 80%;
                     font-size: $standar;
+                    margin: auto;
                     a {
                         .imagen {
                             width: $anchoTotal;
@@ -51,19 +52,23 @@
                 }
                 .texto {
                     font-size: $standar;
-                    width: $anchoTotal;
+                    width: 90%;
+                    margin: 1.5rem;
                 }
             }
     
         }
 
         #proximamente {
-            width: 93%;
+            width: 95%;
+            margin: 1.5rem;
+            font-size: $fsTexto;
         }
     }
 
     
     footer {
+        margin-top: 1rem;
         nav {
             ul {
                 margin: none;
