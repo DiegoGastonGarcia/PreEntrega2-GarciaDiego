@@ -391,13 +391,21 @@ footer {
             height: 100px;
             width: 120px; } }
 
-@media screen and (max-width: 767px) {
-  main .textoLateral {
-    font-size: 1rem; }
-  main .texto, main .textoLateral {
-    font-size: 1rem; }
+@media screen and (max-width: 768px) {
+  main .contenedorGrid {
+    display: flex;
+    flex-direction: column; }
+    main .contenedorGrid .pagesContainer .texto, main .contenedorGrid .reviewContainer .texto, main .contenedorGrid .pagesContainer .textoLateral, main .contenedorGrid .reviewContainer .textoLateral {
+      visibility: hidden; }
   main #proximamente {
     font-size: 2rem; }
+  main .textoLateral {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    visibility: visible !important; }
+    main .textoLateral p {
+      display: none; }
   main .boton, main .botonImagen {
     font-size: 3rem; } }
 

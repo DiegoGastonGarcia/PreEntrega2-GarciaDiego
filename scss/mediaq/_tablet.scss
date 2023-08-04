@@ -1,16 +1,28 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     main {
-        .textoLateral {
-            font-size: $standar;
-        }
-
-        .texto {
-            font-size: $standar;
+        .contenedorGrid {
+            display: flex;
+            flex-direction: column;
+            .pagesContainer {
+                .texto {
+                    visibility: hidden;
+                }
+            }
         }
 
         #proximamente {
             font-size: ($standar)*2;
     }
+
+     .textoLateral {
+            display: flex;
+            flex-direction: row;
+            font-size: $standar;
+            visibility: visible !important;
+            p {
+                display: none;
+            }
+        }
 
         .boton {
             font-size: ($fsTexto)*2;
