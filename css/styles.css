@@ -72,31 +72,50 @@ main {
     font-family: "Jost", sans-serif;
     font-size: 7rem;
     color: #809bff;
+    margin-top: 2rem;
     text-align: center; }
   main section h2 {
     font-family: "Jost", sans-serif;
     font-size: 2.5rem;
+    margin: 0 0 3rem 0;
     color: #809bff;
     text-align: center; }
   main section p {
     font-family: "Jost", sans-serif;
     font-size: 1.5rem;
     color: #809bff;
-    text-align: center; }
+    text-align: center;
+    margin: 1rem; }
 
-main #aportes {
+#aportes {
+  margin: 0;
+  padding: 0;
   font-family: "Jost", sans-serif;
   font-size: 2.5rem;
-  color: #809bff;
-  margin: 1rem;
-  padding: 1rem; }
-  main #aportes .forms {
+  color: #809bff; }
+  #aportes .forms {
+    font-size: 1.5rem;
     font-family: "Jost", sans-serif;
+    color: #809bff; }
+    #aportes .forms fieldset {
+      padding: 1rem;
+      margin: 1rem; }
+  #aportes #juego, #aportes #aporte, #aportes #archivos, #aportes #descripcion, #aportes #enviar {
+    background-color: rgba(128, 155, 255, 0.5);
+    color: #142666;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 3px 3px #142666; }
+  #aportes #descripcion {
+    width: 65%; }
+  #aportes #enviar {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     font-size: 1rem;
-    color: #809bff;
-    margin: 1rem;
-    padding: 1rem; }
-  main #aportes #enviar {
+    padding: 0.5rem;
+    margin: auto;
+    margin-bottom: 1rem;
     text-align: center; }
 
 .contenedorGrid {
@@ -105,8 +124,8 @@ main #aportes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(7, 1fr);
-  grid-template-areas: "pages review" "pages review" "pages review" "pages review" "pages review" "pages review" "pages  prox"; }
-  .contenedorGrid .pagesContainer {
+  grid-template-areas: "pages review" "pages review" "pages review" "pages review" "pages review" "pages review" "prox  prox"; }
+  .contenedorGrid .pagesContainer, .contenedorGrid .reviewContainer {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -117,25 +136,26 @@ main #aportes {
     align-items: center;
     flex-shrink: 1 !important; }
   .contenedorGrid .reviewContainer {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-evenly !important;
-    align-items: center;
-    flex-shrink: 1 !important;
     grid-area: review; }
+  .contenedorGrid #proximamente {
+    grid-area: prox;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    margin: auto; }
 
-.boton {
+.boton, .botonImagen {
   font-family: "Jost", sans-serif;
   font-size: 2.5rem;
   margin: 1rem;
   width: 100%;
   height: 205px;
-  background-color: #050f33;
+  background-color: #142666;
   color: #809bff;
   text-align: center;
+  border-radius: 1rem;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -144,53 +164,115 @@ main #aportes {
   flex-direction: column;
   flex-shrink: 0;
   flex-wrap: wrap;
-  justify-content: center; }
-  .boton a {
+  justify-content: center;
+  transition: all 0.3s ease-out; }
+  .boton:hover, .botonImagen:hover {
+    box-shadow: 0px 0px 5px 5px #809bff; }
+  .boton a, .botonImagen a {
     width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     transition: all 0.3s ease-in; }
-    .boton a:hover {
-      transform: scale(1.3); }
-    .boton a .imagen {
+    .boton a:hover, .botonImagen a:hover {
+      transform: scale(1.2); }
+    .boton a .imagen, .botonImagen a .imagen {
       width: 70%;
       height: 205px; }
-  .boton #proximamente {
-    grid-area: prox; }
-    .boton #proximamente a {
-      width: 100%;
-      color: #809bff;
-      font-size: 5rem !important; }
-      .boton #proximamente ahover {
-        font-size: 5.5rem; }
+  .boton #proximamente a, .botonImagen #proximamente a {
+    width: 100%;
+    color: #809bff;
+    font-size: 5rem !important; }
+    .boton #proximamente ahover, .botonImagen #proximamente ahover {
+      font-size: 5.5rem; }
 
-.textoLateral {
-  margin: 1rem;
+.botonImagen {
+  background-color: transparent; }
+  .botonImagen:hover {
+    box-shadow: none; }
+
+.texto, .textoLateral {
+  color: #809bff;
+  background-color: rgba(20, 38, 102, 0.6);
   font-family: "Jost", sans-serif;
   font-size: 1.5rem;
-  color: #809bff;
-  background-color: #142666;
-  width: 34rem;
-  height: 42rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.texto {
-  color: #809bff;
-  background-color: #142666;
-  font-family: "Jost", sans-serif;
-  font-size: 1.5rem;
-  margin: 1rem;
   width: 95%;
   height: 20rem;
   text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px #809bff;
+  padding: 1rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   flex-wrap: wrap;
   justify-content: center; }
+
+.textoLateral {
+  font-size: 1.2rem;
+  width: 80%;
+  height: 42rem;
+  justify-content: space-around; }
+
+.video {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem; }
+  .video iframe {
+    box-shadow: 0 0 0.5rem 0.3rem #809bff;
+    border-radius: 1rem; }
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80%;
+  width: 95%;
+  gap: 2rem; }
+  .cardsContainer a .carta {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: nowrap;
+    width: 160px;
+    height: 210px;
+    background-color: rgba(128, 155, 255, 0.75);
+    border-radius: 20px;
+    box-shadow: 0.5rem 1rem 1rem #050f33;
+    transition: all 0.2s ease-in; }
+    .cardsContainer a .carta:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 25px 5px rgba(128, 155, 255, 0.75); }
+    .cardsContainer a .carta .imgCarta {
+      margin: 1px 0 5px 3px;
+      overflow: hidden; }
+      .cardsContainer a .carta .imgCarta img {
+        border: solid 2px #809bff;
+        height: 130px;
+        width: 150px;
+        background-color: rgba(5, 15, 51, 0.85); }
+    .cardsContainer a .carta .textoCarta h3 {
+      font-family: "Jost", sans-serif;
+      font-size: 1.5rem;
+      color: #050f33; }
+    .cardsContainer a .carta .textoCarta p {
+      font-family: "Jost", sans-serif;
+      color: #050f33;
+      font-size: 1rem;
+      font-weight: 500; }
 
 footer {
   height: 10%;
@@ -276,20 +358,20 @@ footer {
             color: #050f33;
             font-size: 1.5rem; }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   #logoW {
     height: 100%; }
-  main .pagesContainer {
+  main .pagesContainer, main .contenedorGrid .reviewContainer, .contenedorGrid main .reviewContainer {
     width: 100%; }
-    main .pagesContainer .texto {
-      width: 95%;
-      font-size: 1.3rem; }
-    main .pagesContainer .boton {
-      width: 95%;
+    main .pagesContainer .texto, main .contenedorGrid .reviewContainer .texto, .contenedorGrid main .reviewContainer .texto, main .pagesContainer .textoLateral, main .contenedorGrid .reviewContainer .textoLateral, .contenedorGrid main .reviewContainer .textoLateral {
+      width: 90%;
+      font-size: 1rem; }
+    main .pagesContainer .boton, main .contenedorGrid .reviewContainer .boton, .contenedorGrid main .reviewContainer .boton, main .pagesContainer .botonImagen, main .contenedorGrid .reviewContainer .botonImagen, .contenedorGrid main .reviewContainer .botonImagen {
+      width: 90%;
       font-size: 3.5rem; }
-      main .pagesContainer .boton a {
+      main .pagesContainer .boton a, main .contenedorGrid .reviewContainer .boton a, .contenedorGrid main .reviewContainer .boton a, main .pagesContainer .botonImagen a, main .contenedorGrid .reviewContainer .botonImagen a, .contenedorGrid main .reviewContainer .botonImagen a {
         width: 100%; }
-        main .pagesContainer .boton a .imagen {
+        main .pagesContainer .boton a .imagen, main .contenedorGrid .reviewContainer .boton a .imagen, .contenedorGrid main .reviewContainer .boton a .imagen, main .pagesContainer .botonImagen a .imagen, main .contenedorGrid .reviewContainer .botonImagen a .imagen, .contenedorGrid main .reviewContainer .botonImagen a .imagen {
           width: 100%; }
   main #proximamente {
     width: 100%;
@@ -297,17 +379,26 @@ footer {
   main .reviewContainer {
     width: 100%; }
     main .reviewContainer .textoLateral {
-      width: 95%;
-      font-size: 1.3rem; } }
+      width: 90%;
+      font-size: 1rem; }
+      main .reviewContainer .textoLateral .cardsContainer {
+        height: 70%;
+        flex-wrap: wrap; }
+        main .reviewContainer .textoLateral .cardsContainer a .carta {
+          height: 180px;
+          width: 130px; }
+          main .reviewContainer .textoLateral .cardsContainer a .carta .imgCarta img {
+            height: 100px;
+            width: 120px; } }
 
 @media screen and (max-width: 767px) {
   main .textoLateral {
     font-size: 1rem; }
-  main .texto {
+  main .texto, main .textoLateral {
     font-size: 1rem; }
   main #proximamente {
     font-size: 2rem; }
-  main .boton {
+  main .boton, main .botonImagen {
     font-size: 3rem; } }
 
 @media screen and (max-width: 425px) {
@@ -329,21 +420,27 @@ footer {
     flex-shrink: 0;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%; }
+    width: 90%; }
     main .contenedorGrid .reviewContainer {
       display: none; }
-    main .contenedorGrid .pagesContainer .boton {
-      width: 100%;
-      font-size: 1rem; }
-      main .contenedorGrid .pagesContainer .boton a .imagen {
-        width: 100%; }
-    main .contenedorGrid .pagesContainer .texto {
+    main .contenedorGrid .pagesContainer .boton, main .contenedorGrid .reviewContainer .boton, main .contenedorGrid .pagesContainer .botonImagen, main .contenedorGrid .reviewContainer .botonImagen {
+      width: 80%;
       font-size: 1rem;
-      width: 100%; }
+      margin: auto; }
+      main .contenedorGrid .pagesContainer .boton a .imagen, main .contenedorGrid .reviewContainer .boton a .imagen, main .contenedorGrid .pagesContainer .botonImagen a .imagen, main .contenedorGrid .reviewContainer .botonImagen a .imagen {
+        width: 100%; }
+    main .contenedorGrid .pagesContainer .texto, main .contenedorGrid .reviewContainer .texto, main .contenedorGrid .pagesContainer .textoLateral, main .contenedorGrid .reviewContainer .textoLateral {
+      font-size: 1rem;
+      width: 90%;
+      margin: 1.5rem; }
   main #proximamente {
-    width: 93%; }
-  footer nav ul {
-    margin: none; }
+    width: 95%;
+    margin: 1.5rem;
+    font-size: 1.5rem; }
+  footer {
+    margin-top: 1rem; }
+    footer nav ul {
+      margin: none; }
   .textoboton {
     width: 35%;
     font-size: 0.6rem; }

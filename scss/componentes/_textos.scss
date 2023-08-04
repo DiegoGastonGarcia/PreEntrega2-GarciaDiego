@@ -1,0 +1,22 @@
+.texto {
+    color: $primary;
+    background-color: rgba($special, 0.6) ;
+    font-family: $fuentePrincipal;
+    font-size: $fsTexto;
+    width: 95%;
+    height: ($standar)*20;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 1px $primary;
+    @include size;
+    @include flexcolum;
+}
+
+.textoLateral {
+    @extend .texto;
+    font-size: 1.2rem;
+    width: 80%;
+    height: ($standar)*42;
+    justify-content: space-around;
+    
+}

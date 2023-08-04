@@ -1,0 +1,54 @@
+@media screen and (max-width: 1024px) {
+    #logoW {
+        height: 100%;
+    }
+    
+    main {
+            .pagesContainer {
+                width: $anchoTotal;
+                .texto {
+                    width: 90%;
+                    font-size:$standar;
+                }   
+                .boton {
+                    width: 90%;
+                    font-size: ($standar)*3.5;
+                    a {
+                        width: $anchoTotal;
+                        .imagen {
+                            width: $anchoTotal;
+                        }
+                    }
+                }
+            }
+        
+        
+        #proximamente {
+            width: $anchoTotal;
+            font-size: ($standar)*3;
+        }   
+        .reviewContainer {
+            width: $anchoTotal;
+            .textoLateral {
+                width: 90%;
+                font-size: $standar;
+                .cardsContainer {
+                    height: 70%;
+                    flex-wrap: wrap;
+                    a {
+                        .carta {
+                            height: 180px;
+                            width: 130px;
+                            .imgCarta {
+                                img {
+                                    height: 100px;
+                                    width: 120px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
