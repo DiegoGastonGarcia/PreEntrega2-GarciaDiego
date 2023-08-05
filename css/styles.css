@@ -440,7 +440,8 @@ footer {
     main .contenedorGrid .pagesContainer .texto, main .contenedorGrid .reviewContainer .texto, main .contenedorGrid .pagesContainer .textoLateral, main .contenedorGrid .reviewContainer .textoLateral {
       font-size: 1rem;
       width: 90%;
-      margin: 1.5rem; }
+      margin: 1.5rem;
+      visibility: visible; }
   main #proximamente {
     width: 95%;
     margin: 1.5rem;
