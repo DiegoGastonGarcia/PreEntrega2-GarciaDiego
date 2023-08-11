@@ -5,7 +5,6 @@
             nav {
                 ul {
                 width: 70%;
-                height: 30%;
                     li {
                         width: 30%;
                         height: 30%;
@@ -53,11 +52,15 @@
                 .texto {
                     font-size: $standar;
                     width: 90%;
-                    margin: 1.5rem;
+                    margin: 2.2rem;
                     visibility: visible;
                 }
             }
     
+        }
+
+        .video {
+            width: 100%;
         }
 
         #proximamente {
@@ -83,7 +86,7 @@
         font-size: 0.6rem;
     }
     .network {
-        width: 80%;
+        width: 4rem;
     }
     
 }
